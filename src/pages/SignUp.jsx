@@ -36,7 +36,7 @@ export default function SignUp() {
                 <label>Repetir contraseña</label>
                     <input type="password"  {...register('password2')} required />
                 </div>
-                <button>Sign up</button>
+                <button>Registrar</button>
             </form>
         </div>
     )

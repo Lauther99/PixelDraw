@@ -12,7 +12,7 @@
     padding: 24px;
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--black-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,21 +68,13 @@ input {
     align-items: center;
     gap: 12px;
     background-color: #ffffff;
-    color: black;
+    color: var(--black-primary);
 }
 
 .btn-google:hover{
     box-shadow: 0 0 20px 0 #d3d5cf;
 }
 
-p {
-    font-size: 12px;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
 
 .fa-eye {
     position: absolute;

@@ -10,7 +10,7 @@
 .sign-up-form {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--black-primary);
     width: 500px;
     padding: 20px 30px 20px 30px;
     z-index: 1;

@@ -1,81 +1,72 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  transition: all .5s;
-}
+  /* Fuentes */
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&family=Sedgwick+Ave+Display&display=swap');
 
-html{
-  overflow-x: hidden;
-}
-
-body {
-  min-height: 100vh;
-  background-color: #f0f1ef;
-}
-
-a{
-  text-decoration: none;
-}
-
-ul, li, a{
-  text-decoration: none;
-  list-style: none;
-}
-
-button{
-  border: none;
-  cursor: pointer;
-}
-
-
-@media screen and (max-width: 700px) {
-  body{
-      font-size: 12px;
+  /* 
+    Tipo Normal
+    font-family: 'Orbitron', sans-serif;
+    
+    Tipo Grafiti
+    font-family: 'Sedgwick Ave Display', cursive;
+  */
+  :root {
+    --black-primary: #252027; 
   }
-}
 
-.App{
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all .5s;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+  }
 
 
-.screen {
-  display: grid;
-  grid-template-columns: repeat(20, 20px);
-  gap: 1px;
-  border: 1px solid #000;
-  margin: 20px auto;
-}
+  html {
+    overflow-x: hidden;
+  }
 
-.pixel {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  z-index: 1;
-}
+  body {
+    min-height: 100vh;
+    background-color: #f0f1ef;
+  }
 
-.purchased{
-  background-color: #000;
-}
+  a {
+    text-decoration: none;
+  }
 
-.no-purchased{
-  background-color: #ccc;
-}
+  ul,
+  li,
+  a {
+    text-decoration: none;
+    list-style: none;
+  }
 
-.board-row{
-  display: flex;
-  gap: 1px;
+  button {
+    border: none;
+    cursor: pointer;
+  }
 
-}
 
-.board{
-  display: flex;
-  flex-direction: column;
+  @media screen and (max-width: 700px) {
+    body {
+      font-size: 12px;
+    }
+  }
 
-  gap: 1px;
-}
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
 
+
+  p {
+    font-size: 12px;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }

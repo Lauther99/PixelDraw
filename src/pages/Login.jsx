@@ -24,7 +24,7 @@ export default function Login() {
                 <h1>Bienvenido</h1>
                 <p>o, <Link to='/signup'>regístrate aquí</Link></p>
                 <div className='form-item'>
-                    <label htmlFor="">Coreo</label>
+                    <label htmlFor="">Correo</label>
                     <input type="email" placeholder='Correo'{...register('email')} required />
                 </div>
                 <div className='form-item'>

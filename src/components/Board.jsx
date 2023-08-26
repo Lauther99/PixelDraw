@@ -1,5 +1,5 @@
 import Square from './Square';
-
+import '../assets/styles/Board.css'
 const Board = ({ maxRows, maxColumns }) => {
 
     const renderSquare = ({ rowIndex, columnIndex }) => {
