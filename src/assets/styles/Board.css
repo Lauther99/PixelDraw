@@ -31,6 +31,33 @@
     display: flex;
     flex-direction: column;
     gap: 1px;
-    background-color: red;
-    align-items: center;
+    align-items: flex-start;
+    padding: 24px;
+    width: 700px;
+    max-height: 500px;
+    overflow-x: auto;
 }
+
+
+
+@media screen and (max-width: 700px){
+    .board {
+        max-width: 300px;
+        border: 1px solid #ccc;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+

@@ -1,7 +1,7 @@
 .div-nav{
     position: relative;
-    width: 100vw;
-    height: 70px;
+    width: 100%;
+    height: var(--navbar-height);
     z-index: 1000;
     background: #151515c0;
     backdrop-filter: blur(100px);

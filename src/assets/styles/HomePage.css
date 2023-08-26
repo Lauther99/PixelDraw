@@ -1,0 +1,66 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - var(--navbar-height));
+    padding: 24px;
+    align-items: center;
+}
+
+.home h1, .home h2{
+    text-align: center;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.home h1{
+    font-size: 24px;
+}
+
+
+.board-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 12px;
+    flex-wrap: wrap;
+
+}
+
+.board-conf{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-conf h4{
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.board-conf-items{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+.conf-item{
+    width: 120px;
+}
+
+input[type="color"] {
+    appearance: none; /* Para resetear los estilos del navegador */
+    border: none; /* Quita el borde predeterminado */
+    width: 30px; /* Ancho personalizado */
+    height: 30px; /* Altura personalizada */
+    border-radius: 50%; /* Hace que sea un círculo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el color picker */
+    outline: none; /* Quita el contorno al hacer clic */
+    padding: 0; /* Quita el espacio interno */
+    margin-right: 10px; /* Espaciado entre el color picker y el texto */
+    background-color: transparent;
+    vertical-align: middle;
+}

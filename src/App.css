@@ -10,6 +10,7 @@
   */
   :root {
     --black-primary: #252027; 
+    --navbar-height: 70px;
   }
 
   * {
