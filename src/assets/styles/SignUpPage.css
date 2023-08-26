@@ -1,10 +1,13 @@
 .sign-up-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     width: 100vw;
     height: calc(100vh - var(--navbar-height));
     background-color: #f2f2f2;
+    overflow: scroll;
+    margin-top: 2rem;
 }
 
 .sign-up-form {
@@ -47,4 +50,12 @@ input {
 
 .sign-up-form button:hover {
     box-shadow: 0 0 20px 0 #007bff;
+}
+
+
+@media screen and (max-width: 700px){
+    .sign-up-form {
+        width: 300px;
+    }
+    
 }

@@ -10,7 +10,11 @@
   */
   :root {
     --black-primary: #252027; 
+    --blue-secondary: #007bff; 
+    --light-blue: #87CEEB;
     --navbar-height: 70px;
+    --grafiti-font: 'Sedgwick Ave Display', cursive;
+    --normal-font: 'Orbitron', sans-serif;
   }
 
   * {
@@ -19,7 +23,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: all .5s;
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--normal-font);
     font-weight: 400;
   }
 
@@ -68,6 +72,6 @@
   }
 
   a {
-    color: #007bff;
+    color: var(--blue-secondary);
     text-decoration: none;
   }

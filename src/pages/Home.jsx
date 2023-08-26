@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 
 export default function Home() {
     //aqui va tu logica del componente
-    const [rows, setRows] = useState(10); // Valor inicial para las filas
-    const [columns, setColumns] = useState(10); // Valor inicial para las columnas
+    const [rows, setRows] = useState(20); // Valor inicial para las filas
+    const [columns, setColumns] = useState(20); // Valor inicial para las columnas
     const [selectedColor, setSelectedColor] = useState('#ffffff'); // Color inicial
 
     const handleRowChange = (event) => {
