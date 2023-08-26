@@ -1,3 +1,5 @@
+
+
 .login-container {
     width: 100vw;
     height: 100vh;
@@ -11,11 +13,10 @@
     padding: 24px;
     background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px #c4c7bf;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
     z-index: 1;
 }
 
@@ -31,6 +32,7 @@
 .form-item {
     margin-top: 16px;
     position: relative;
+    width: 100%;
 }
 
 .form-item label {
