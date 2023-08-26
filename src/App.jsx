@@ -5,12 +5,14 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import ProtectedRoutes from './components/ProtectedRoutes';
 import { HashRouter, Route, Routes } from 'react-router-dom'
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
       <HashRouter>
         <BgStars />
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route element={<ProtectedRoutes />}>

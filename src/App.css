@@ -39,7 +39,6 @@ button{
 .App{
   display: flex;
   flex-direction: column;
-  gap: 4rem;
   height: 100vh;
 }
 
