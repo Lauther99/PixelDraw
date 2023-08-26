@@ -1,15 +1,29 @@
 import { useState } from 'react';
 
 
-const Square = ({ children, id }) => {
+const Square = ({ children, id, colorSq }) => {
     const [purchased, setPurchased] = useState(false);
+    const [squareStyle, setSquareStyle] = useState({
+        backgroundColor: '',
+    });
+
     const handleSquareClick = () => {
+        if (purchased){
+            setPurchased(false)
+            setSquareStyle({
+                backgroundColor: '',
+            });
+            return
+        }
+
         setPurchased(true)
-        console.log(id);
+        setSquareStyle({
+            backgroundColor: colorSq,
+        });
     };
 
     return (
-        <div className={`pixel ${purchased ? 'purchased' : 'no-purchased'}`} onClick={handleSquareClick}> {children}</div>
+        <div className={`pixel ${purchased ? 'purchased' : 'no-purchased'}`} style={squareStyle} onClick={handleSquareClick}> {children}</div>
     );
 };
 

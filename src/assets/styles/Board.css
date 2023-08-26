@@ -13,9 +13,9 @@
     z-index: 1;
 }
 
-.purchased {
+/* .purchased {
     background-color: var(--black-primary);
-}
+} */
 
 .no-purchased {
     background-color: #ccc;

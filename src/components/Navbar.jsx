@@ -10,7 +10,7 @@ export default function Navbar() {
                     <h1><Link to='/'><span className='blue-letter'>P</span>ixel <span className='blue-letter'>D</span>raw</Link></h1>
                 </li>
                 <li className='nav-item page-title'>
-                    <h1><Link to='/'><span className='blue-letter'>PD</span></Link></h1>
+                    <h1><Link to='/'><span className='blue-letter'>P D</span></Link></h1>
                 </li>
                 <li className='nav-item'>
                     <Link to='/login'>

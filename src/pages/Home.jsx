@@ -6,7 +6,7 @@ export default function Home() {
     //aqui va tu logica del componente
     const [rows, setRows] = useState(20); // Valor inicial para las filas
     const [columns, setColumns] = useState(20); // Valor inicial para las columnas
-    const [selectedColor, setSelectedColor] = useState('#ffffff'); // Color inicial
+    const [selectedColor, setSelectedColor] = useState('#9999'); // Color inicial
 
     const handleRowChange = (event) => {
         setRows(parseInt(event.target.value));
@@ -42,7 +42,7 @@ export default function Home() {
                         </label>
                     </div>
                 </div>
-                <Board maxRows={rows} maxColumns={columns} />
+                <Board maxRows={rows} maxColumns={columns} colorSq={selectedColor}/>
             </div>
         </div>
     )

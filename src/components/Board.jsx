@@ -1,10 +1,10 @@
 import Square from './Square';
 import '../assets/styles/Board.css'
-const Board = ({ maxRows, maxColumns }) => {
+const Board = ({ maxRows, maxColumns, colorSq }) => {
 
     const renderSquare = ({ rowIndex, columnIndex }) => {
         const uniqueKey = rowIndex * maxColumns + columnIndex;
-        return <Square key={uniqueKey} id = {uniqueKey} />;
+        return <Square key={uniqueKey} id = {uniqueKey} colorSq ={colorSq}/>;
     };
 
     const renderRow = (rowIndex) => {
